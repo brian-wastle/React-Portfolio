@@ -1,41 +1,12 @@
-import { useState, useEffect } from 'react';
-// Todo: Bring in the required component from 'react-router-dom' for linking between pages
-import { useParams, Link} from 'react-router-dom';
-import Profile from '../components/UI/ProfileSections/ProfileTeaser';
-import ListItem from '../components/UI/ListItem';
-
-import API from '../utils/API';
-
+import profilePic from '../assets/images/profile-pic.jpg';
 export default function AboutMePage() {
-  // Prior to the return statement, our homepage uses a few react hooks and fetchData function to query to a mock database and retrieve random user data
-  const [users, setUsers] = useState([]);
 
-  const fetchData = async () => {
-    const { data } = await API.getUsers();
-
-    setUsers(data);
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  // Iterate over each mock user to display their abridged profile data and a link to their page
+  
   return (
-    <div className="container pt-4">
-      <ul className="list-group list-group">
-        {users.map((user) => (
-          <ListItem key={user.id}>
-            <Profile user={user} />
-            {/* Todo: Update this link component's to prop so that the user can click to see a single user's profile */}
-            <Link to={"/Profile/"+ user.id}
-              className="badge bg-primary rounded-pill"
-            >
-              See More
-            </Link>
-          </ListItem>
-        ))}
-      </ul>
+    <div >
+      <img src={profilePic} alt="photo of Brian Wastle" className="profile-pic"/>
+      <h3>About Me:</h3>
+      <p className="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi placeat qui molestiae, aperiam facere enim molestias labore sit dolor itaque? Voluptatum labore ad nemo tenetur harum expedita, blanditiis architecto! Sed recusandae in ex officia quas maiores repellendus ipsam! Temporibus dignissimos unde doloremque laborum, vel facilis voluptate itaque officia sed laboriosam veniam esse voluptatum quam natus, vero ut, tempora tenetur! Neque, nesciunt. Delectus illo beatae qui molestiae debitis ad! Aliquid architecto, dolore tempore quo quas nihil odit totam dolores ipsa consectetur voluptas corporis reprehenderit, eligendi amet repellat earum doloribus officia!</p>
     </div>
   );
 }

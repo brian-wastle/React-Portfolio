@@ -1,26 +1,26 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: #1d4364;
+  background-color: #ffffff;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #054b0a;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #ff6a6a;
 }
 
 body {
@@ -41,12 +41,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #f9f9f9;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #ff0000;
 }
 button:focus,
 button:focus-visible {
@@ -60,15 +60,105 @@ button:focus-visible {
   padding: 1em;
 }
 
-@media (prefers-color-scheme: light) {
+/* NavBar */
+
+nav {
+  background-color: #c96262;
+}
+
+.nav-container {
+  display:flex;
+  width:100vw;
+  justify-content: space-between;
+  align-items:center; 
+}
+
+.nav-title {
+  display:flex;
+  flex-direction:row;
+  padding-top:2vh;
+  padding-left: 5vw;
+}
+
+.nav-links {
+  display:flex;
+  padding-right: 5vw;
+}
+
+.indiv-links {
+  margin:2vw;
+}
+
+#nav-container a.active {
+  color:#ff0000
+}
+
+/* Footer */
+
+footer {
+  background-color: #c96262;
+}
+
+.footer-container {
+  display:flex;
+  width:100vw;
+  margin:0;
+  justify-content: center;
+  align-items:center; 
+  list-style-type: none;
+}
+
+.footer-container img {
+  margin-top:10px;
+  margin-bottom:10px;
+  width:50px;
+  height:50px;
+}
+
+/* About Me Page */
+.profile-pic {
+  display:block;
+  border-radius: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 200px;
+  min-height: 200px;
+  margin-top:10vh;
+  margin-bottom:10vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about-text {
+  margin:5vw;
+}
+
+/* Contact page */
+.contact-body {
+  margin: 5vw;
+}
+
+#message {
+  resize:none;
+  width:500px;
+  height:300px;
+}
+
+
+
+.indiv-socials {
+  margin:2vw;
+}
+@media (prefers-color-scheme: dark) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
   }
   a:hover {
-    color: #747bff;
+    color: #ff0000;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #1a1a1a;
   }
 }
