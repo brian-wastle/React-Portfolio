@@ -11,10 +11,10 @@ export default function PortfolioPage() {
     <>
     {console.log(projectsData)}
     <div>
-      <ul>
+      <ul className="grid-container project-list">
         {projectsData.map((project) => (
           <ListItem key={project.id}>
-            <Project project={project} />
+            <Project className="grid-item" project={project} />
           </ListItem>
         ))}
       </ul>
