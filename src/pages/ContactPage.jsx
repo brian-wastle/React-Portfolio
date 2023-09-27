@@ -53,6 +53,7 @@ export default function ContactPage() {
 
   return (
     <div className="contact-body">
+      <h3 className="page-title">Contact Me </h3>
       <form action="" method="get" className="form-example">
         <div className="form-example">
           <label htmlFor="name">Name: </label><br />

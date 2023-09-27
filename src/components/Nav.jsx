@@ -3,12 +3,11 @@ import { NavLink } from 'react-router-dom';
 import Navbar from './UI/Navbar';
 
 export default function Nav() {
-  // The Navbar UI component will render each of the Link elements in the links prop
   return (
     <div id='nav-container'>
       <Navbar
         links={[
-          <NavLink key={1} to="/">
+          <NavLink className="indiv-links" key={1} to="/">
             Home
           </NavLink>,
           <NavLink key={2} className="indiv-links" to="/Portfolio">

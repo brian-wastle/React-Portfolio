@@ -9,12 +9,12 @@ export default function PortfolioPage() {
 
   return (
     <>
-    {console.log(projectsData)}
+    <h3 className="page-title portfolio-title">Portfolio</h3>
     <div>
       <ul className="grid-container project-list">
         {projectsData.map((project) => (
-          <ListItem key={project.id}>
-            <Project className="grid-item" project={project} />
+          <ListItem className="grid-div" key={project.id}>
+            <Project project={project} />
           </ListItem>
         ))}
       </ul>
