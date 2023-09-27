@@ -1,5 +1,5 @@
 // Bringing in the required import from 'react-router-dom'
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Navbar from './UI/Navbar';
 
 export default function Nav() {
@@ -15,11 +15,11 @@ export default function Nav() {
             Portfolio
           </NavLink>,
           <NavLink key={3} className="indiv-links" to="/Contact">
-          Contact
-        </NavLink>,
-        <NavLink key={4} className="indiv-links" to="/Resume">
-        Resume
-      </NavLink>,
+            Contact
+          </NavLink>,
+          <NavLink key={4} className="indiv-links" to="/Resume">
+            Resume
+          </NavLink>,
         ]}
       />
     </div>

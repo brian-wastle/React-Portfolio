@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "ARV",
+    "description": "Fetch API",
+    "link": "https://cameronhack.github.io/ARV/",
+    "repo": "https://github.com/CameronHack/ARV"
+  },
+  {
+    "id": 2,
+    "name": "JATE",
+    "description": "Progressive Web App",
+    "link": "https://ancient-stream-03967-fee3287267c3.herokuapp.com/",
+    "repo": "https://github.com/brian-wastle/Web-Text-Editor"
+  },
+  {
+    "id": 3,
+    "name": "Boot Camp Study Guide",
+    "description": "CSS",
+    "link": "https://brian-wastle.github.io/prework-study-guide/",
+    "repo": "https://github.com/brian-wastle/prework-study-guide"
+  },
+  {
+    "id": 4,
+    "name": "Quiz Game",
+    "description": "Local Storage",
+    "link": "https://brian-wastle.github.io/Quiz-Game/",
+    "repo": "https://github.com/brian-wastle/Quiz-Game"
+  },
+  {
+    "id": 5,
+    "name": "CSS Cheat Sheet",
+    "description": "CSS",
+    "link": "https://brian-wastle.github.io/CSS-Cheat-Sheet/",
+    "repo": "https://github.com/brian-wastle/CSS-Cheat-Sheet"
+  },
+  {
+    "id": 6,
+    "name": "Password Generator",
+    "description": "Regex",
+    "link": "https://brian-wastle.github.io/password-generator/",
+    "repo": "https://github.com/brian-wastle/password-generator"
+  }
+]
