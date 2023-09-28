@@ -17,5 +17,7 @@ Fork a copy of the repo from my [github](https://github.com/brian-wastle/React-P
 
 Navigate through the site with the navbar at the top of the page. Links to the deployed project and Github repository are available on the Portfolio page. A downloadable copy of my resume is available on the Resume page. 
 
+[Link to the deployed page](https://lively-meringue-34393f.netlify.app/)
+
 ![screenshot of portfolio page](./src/assets/images/screenshot.PNG)
 
