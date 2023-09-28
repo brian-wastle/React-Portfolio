@@ -1,9 +1,11 @@
+import { motion } from "framer-motion";
+
 export default function Project({ children, ...props }) {
   return (
-    <li
+    <motion.li
       {...props}
     >
       {children}
-    </li>
+    </motion.li>
   );
 }

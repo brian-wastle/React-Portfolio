@@ -1,10 +1,12 @@
+import { motion } from "framer-motion";
+
 export default function Nav({ links }) {
   return (
     <nav>
       <div className="nav-container">
-        <div className="nav-title">
+        <p className="nav-title">
           Brian Wastle
-        </div>
+        </p>
         <div className="nav-links">
           <ul>
             {links.map((link) => link)}

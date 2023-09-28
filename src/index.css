@@ -27,7 +27,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  max-width: 100vw;
+
   overflow-x: hidden
 }
 
@@ -37,7 +37,7 @@ h1 {
 }
 
 .page-title {
-  margin-top: 5vw;
+  margin-top: 10vw;
   font-size: 35px;
 }
 
@@ -76,23 +76,24 @@ nav {
 
 .nav-container {
   display:flex;
-  width:100vw;
+  width:100%;
   height: 100px;
   justify-content: space-between;
   align-items:center; 
-  font-size: 35px;
+  
 }
 
 .nav-title {
   display:flex;
   flex-direction:row;
-  padding-top:2vh;
-  padding-left: 5vw;
+  padding-left: 7vw;
+  font-size: 50px;
+  color:#c3977f;
 }
 
 .nav-links {
   display:flex;
-  padding-right: 5vw;
+  padding-right: 10vw;
 }
 
 .indiv-links {
@@ -119,7 +120,7 @@ footer {
 }
 
 .footer-container img {
-  margin-top:10px;
+  margin-top:15px;
   margin-bottom:10px;
   width:50px;
   height:50px;
@@ -145,7 +146,7 @@ footer {
 }
 
 .about-text {
-  margin:5vw;
+  margin:10vw;
 }
 
 /* Portfolio Page */
@@ -206,7 +207,7 @@ footer {
 
 /* Contact page */
 .contact-body {
-  margin: 5vw;
+  margin-left: 10vw;
 }
 
 #message {
@@ -217,18 +218,13 @@ footer {
 
 /* Resume Page */
 .resume-container {
-  height:80vh;
+  margin-left: 10vw;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-  }
-  a:hover {
-    color: #ff0000;
-  }
-  button {
-    background-color: #1a1a1a;
-  }
+.resume-title {
+  margin-left: 10vw;
+}
+
+.resume-heading {
+  font-size: 25px;
 }

@@ -68,26 +68,28 @@ export default function ContactPage() {
           <textarea name="textMessage" id="message" onChange={handleInputChange} onBlur={handleOnBlurMessage}/>
         </div>
         <div className="form-example">
+          
+          {userNameMessage && (
+          <div>
+            <p className="error-text">{userNameMessage}</p>
+          </div>
+          )}
+
+          {emailMessage && (
+            <div>
+              <p className="error-text">{emailMessage}</p>
+            </div>
+          )}
+
+          {textMessage && (
+            <div>
+              <p className="error-text">{textMessage}</p>
+            </div>
+          )}
+
           <input type="submit" value="Submit" />
         </div>
       </form>
-      {userNameMessage && (
-        <div>
-          <p className="error-text">{userNameMessage}</p>
-        </div>
-      )}
-
-      {emailMessage && (
-        <div>
-          <p className="error-text">{emailMessage}</p>
-        </div>
-      )}
-
-      {textMessage && (
-        <div>
-          <p className="error-text">{textMessage}</p>
-        </div>
-      )}
     </div>
   );
 }
